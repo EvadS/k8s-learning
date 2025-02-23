@@ -1,0 +1,14 @@
+{
+  "name": "k8s-web-hello",
+  "version": "1.0.0",
+  "description": "The best way to manage your Node app using Docker",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Anki",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
