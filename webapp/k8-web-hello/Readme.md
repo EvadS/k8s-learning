@@ -113,3 +113,4 @@ k8s-web-hello-ru - образ который используем
 ```bash
     kubectl delete deploy k8s-hello-world
 ```
+-----------------------------------

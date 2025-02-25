@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: j8s-web-hello
+spec:
+  replicas: 5 
+  selector:
+    matchLabels:
+      app: j8s-web-hello
+  template:
+    metadata:
+      labels:
+        app: j8s-web-hello
+    spec:
+      containers:
+      - name: j8s-web-hello
+        image: evaddev/k8s-web-hello-ru
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 3000

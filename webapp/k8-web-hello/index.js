@@ -1,6 +1,5 @@
 const express = require('express');
 const app = express();
-
 // Allocating os module 
 const os = require('os'); 
 

@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: diff-service
+spec:
+  replicas: 5 
+  selector:
+    matchLabels:
+      app: diff-service
+  template:
+    metadata:
+      labels:
+        app: diff-service
+    spec:
+      containers:
+      - name: diff-service
+        image:  gitlab.ligazakon.net:4567/ips_united/ludocumentdiffservice/develop:latest
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 8080
