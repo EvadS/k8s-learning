@@ -98,18 +98,20 @@ k8s-web-hello-ru - образ который используем
 -- 
 ## удаление сервиса и деплоймента 
 ### список сервисом 
+
 ```bash
     kubectl get svc
 ```
 
+удаляем каждый по имени 
 ```bash
     delete svc k8s-hello-world
 ```
-
+список deployments 
 ```bash
      kubectl get deploy 
 ```
-
+удаляем каждый по имени
 ```bash
     kubectl delete deploy k8s-hello-world
 ```
